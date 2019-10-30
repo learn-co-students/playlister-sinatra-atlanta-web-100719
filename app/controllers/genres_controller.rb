@@ -6,7 +6,7 @@ class GenresController < ApplicationController
 
   get "/genres/:slug" do
     @genre = Genre.all.find do |genre|
-      params[:slug] == genre.name.slug
+      params[:slug] == genre.slug
     end
     erb :"/genres/show"
   end

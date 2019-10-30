@@ -6,7 +6,7 @@ class ArtistsController < ApplicationController
 
   get "/artists/:slug" do
     @artist = Artist.all.find do |artist|
-      params[:slug] == artist.name.slug
+      params[:slug] == artist.slug
     end
     erb :"/artists/show"
   end
