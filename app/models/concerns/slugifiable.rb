@@ -1,2 +1,6 @@
-class Slugify < ActiveRecord::Base
+module Slugifiable 
+    
+    def slug(name)
+        name.parameterize 
+    end 
 end 
