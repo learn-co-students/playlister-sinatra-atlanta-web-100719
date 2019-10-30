@@ -1,6 +1,5 @@
-module Slugifiable 
-    
-    def slug(name)
-        name.parameterize 
-    end 
-end 
+module Slugifiable
+  def slug
+    name.parameterize
+  end
+end
