@@ -1,2 +1,2 @@
-class Slugify < ActiveRecord:Base
+class Slugify < ActiveRecord::Base
 end 
