@@ -1,7 +1,6 @@
-require_relative "../models/concerns/slugifiable"
-
 class Song < ActiveRecord::Base
   include Slugifiable
+  extend Slugfinder
 
   belongs_to :artist
   has_many :song_genres
